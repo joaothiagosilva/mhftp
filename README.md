@@ -2,6 +2,7 @@
 
 MhFtp is a tool to allow file transfer over a multi-homed host, that is, a host with more than one Internet link, using one or more links, summing up all bandwidths.
 
+
 ## How it works ##
 Basically it breaks a file into a number of parts (Chunks), open one connection per link, and start transferring each chunk separately. All information about each chunk, like its size, md5sum, status (DOWNLOADING, PENDING, ERROR) and complete file md5 are stored in a metadata file, using a **.mdata** extension. For example, if you download a file named **archive.tar**, then an **archive.tar.mdata** will be stored in your current directory.
 
